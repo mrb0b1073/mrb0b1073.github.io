@@ -40,7 +40,7 @@ git commit -m "Deploy site - $(date +"%Y-%m-%d %H:%M:%S")" || echo "No changes t
 
 # Push to GitHub
 echo "Puushing to branch $DEPLOY_BRANCH..."
-git push origin $DEPLOY_BRANCH --force
+git push origin HEAD:$DEPLOY_BRANCH --force
 
 # Go back to main and clean worktree
 cd -
