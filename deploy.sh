@@ -6,10 +6,12 @@ set -e
 
 DEPLOY_BRANCH="deploy"
 DEPLOY_DIR="../deploy-worktree"
+BASE_URL="https://mrb0b1073.github.io/"
 
 # Build website
 echo "Building Hugo website..."
-hugo
+HUGO_CMD="hugo --minify --cleanDestinationDir --baseURL \"$BASE_URL\""
+eval $HUGO_CMD
 
 # Change to deploy branch (it is created if not exists)
 if git show-ref --quiet refs/heads/$DEPLOY_BRANCH; then
