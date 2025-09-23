@@ -5,9 +5,9 @@ theme = "PaperMod"
 enableRobotsTXT = true
 
 [outputs]
-    home = ["HTML", "RSS", "JSON"]  # JSON es necesario para Search
-    page = ["HTML"]    # 👈 cada página individual NO genera JSON
-    section = ["HTML"] # 👈 idem para secciones
+    home = ["HTML", "JSON"]  
+    page = ["HTML"]    
+    section = ["HTML"] 
 
 [params]
     defaultTheme = "dark"

@@ -1,7 +1,6 @@
 ---
 title: "About"
 layout: "about"
-summary: "Un poco sobre mí"
 ---
 
 ## 👨‍💻 whoami
