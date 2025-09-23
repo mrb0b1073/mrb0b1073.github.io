@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Mr. B0b Hacking Blog</title>
     <link>http://localhost:1313/</link>
     <description>Recent content on Mr. B0b Hacking Blog</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 23 Sep 2025 10:00:00 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,10 @@
       <link>http://localhost:1313/posts/hello-world/</link>
       <pubDate>Tue, 23 Sep 2025 10:00:00 +0200</pubDate>
       <guid>http://localhost:1313/posts/hello-world/</guid>
-      <description>&lt;p&gt;Hey! 👋 I&amp;rsquo;m &lt;strong&gt;mrb0b1073&lt;/strong&gt; and this is my first post.&lt;/p&gt;&#xA;&lt;p&gt;Welcome to my blog where I’ll be sharing my journey in cybersecurity, pentesting, ethical hacking, and some random topics I find interesting.&lt;br&gt;&#xA;Here you’ll find CTF writeups, tips, and notes on techniques I’m learning along the way.&lt;/p&gt;&#xA;&lt;p&gt;Excited to start this adventure!&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hey! 👋 I&amp;rsquo;m &lt;strong&gt;mrb0b1073&lt;/strong&gt; and this is my first post.&lt;/p&gt;
+&lt;p&gt;Welcome to my blog where I’ll be sharing my journey in cybersecurity, pentesting, ethical hacking, and some random topics I find interesting.&lt;br&gt;
+Here you’ll find CTF writeups, tips, and notes on techniques I’m learning along the way.&lt;/p&gt;
+&lt;p&gt;Excited to start this adventure!&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
@@ -21,13 +24,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
       <description>Un poco sobre mí</description>
-    </item>
-    <item>
-      <title>Search</title>
-      <link>http://localhost:1313/search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/search/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>
