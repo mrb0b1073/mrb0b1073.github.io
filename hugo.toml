@@ -1,0 +1,62 @@
+baseURL = 'https://mrb0b1073.github.io'
+languageCode = 'en-us'
+title = 'Mr. B0b Hacking Blog'
+theme = "PaperMod"
+enableRobotsTXT = true
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]  # JSON es necesario para Search
+    page = ["HTML"]    # 👈 cada página individual NO genera JSON
+    section = ["HTML"] # 👈 idem para secciones
+
+[params]
+    defaultTheme = "dark"
+    showReadingTime = true
+    showCodeCopyButtons = true
+    ShowBreadCrumbs = true
+    ShowPostNavLinks = true
+    ShowPostList = true
+    ShowSearch = true
+
+[params.homeInfoParams]
+    Title = "👨‍💻 Ethical Hacking Blog "
+    Content = "Welcome to my little corner of the internet where I geek out about cybersecurity, ethical hacking, and pentesting. You’ll find CTF writeups from HackTheBox and OverTheWire, pentesting tips, and some cryptography along the way."
+
+
+# --- Social Icons ---
+[[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/mrb0b1073"
+
+[[params.socialIcons]]
+    name = "hackthebox"
+    url = "https://app.hackthebox.com/profile/1150342"
+
+
+[params.seo]
+    metaDescription = "Blog de Hacking Ético: CTFs, HackTheBox, pentesting y tutoriales de ciberseguridad."
+    metaAuthor = "mrb0b1073"
+
+# --- Navigation menu ---
+[[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Search"
+    url = "search"
+    weight = 2
+    
+[[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 3
+
+[[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 4
