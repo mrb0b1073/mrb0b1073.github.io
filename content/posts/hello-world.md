@@ -5,7 +5,7 @@ author = "mrb0b1073"
 draft = false
 +++
 
-Hey! 👋 I'm **mrb0b173** and this is my first post.
+Hey! 👋 I'm **mrb0b1073** and this is my first post.
 
 Welcome to my blog where I’ll be sharing my journey in cybersecurity, pentesting, ethical hacking, and some random topics I find interesting.  
 Here you’ll find CTF writeups, tips, and notes on techniques I’m learning along the way.
