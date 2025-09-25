@@ -3,6 +3,7 @@ title = "Hello World"
 date = 2025-09-23T10:00:00+02:00
 author = "mrb0b1073"
 draft = false
+weight = 1
 +++
 
 Hey! 👋 I'm **mrb0b1073** and this is my first post.
