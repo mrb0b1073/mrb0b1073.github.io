@@ -15,10 +15,10 @@ eval $HUGO_CMD
 
 # Change to deploy branch (it is created if not exists)
 if git show-ref --quiet refs/heads/$DEPLOY_BRANCH; then
-    echo "Actualizando worktree de $DEPLOY_BRANCH..."
+    echo "Updating worktree from $DEPLOY_BRANCH..."
     git worktree add --detach $DEPLOY_DIR $DEPLOY_BRANCH || true
 else
-    echo "Creando rama $DEPLOY_BRANCH y worktree..."
+    echo "Creating branch $DEPLOY_BRANCH and worktree..."
     git checkout --orphan $DEPLOY_BRANCH
     git rm -rf . > /dev/null 2>&1 || true
     git commit --allow-empty -m "Initial deploy branch"
@@ -41,7 +41,7 @@ git add .
 git commit -m "Deploy site - $(date +"%Y-%m-%d %H:%M:%S")" || echo "No changes to commit"
 
 # Push to GitHub
-echo "Puushing to branch $DEPLOY_BRANCH..."
+echo "Pushing to branch $DEPLOY_BRANCH..."
 git push origin HEAD:$DEPLOY_BRANCH --force
 
 # Go back to main and clean worktree
