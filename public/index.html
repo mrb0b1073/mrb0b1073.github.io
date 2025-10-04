@@ -154,6 +154,128 @@ Excited to start this adventure!
   <footer class="entry-footer"><span title='2025-09-25 10:00:00 +0200 CEST'>September 25, 2025</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;mrb0b1073</footer>
   <a class="entry-link" aria-label="post link to Starting Point" href="http://localhost:1313/posts/starting-point/"></a>
 </article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Bandit
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction In this post series we are going to solve every level from bandit in OverTheWire. This guide pretends to be a writeup containing the solutions of the level, designed for beginners.
+To play the games, you just need a Linux OS or terminal, some patience and motivation for learning. If you are windows user I recommend installing WSL, it’s really simple to use. But of course you could use Kali Linux, Parrot, or basically any Linux system.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-10-02 10:00:00 +0200 CEST'>October 2, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;mrb0b1073</footer>
+  <a class="entry-link" aria-label="post link to Bandit" href="http://localhost:1313/posts/otw/bandit/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Bandit0
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Level description The goal of this level is for you to log into the game using SSH. The host to which you need to connect is bandit.labs.overthewire.org, on port 2220. The username is bandit0 and the password is bandit0. Once logged in, go to the Level 1 page to find out how to beat Level 1.
+Tips for beginners Read a bit about what SSH is. Research about what a port is. Solution This is just the tutorial. Here we learn to connect to a server using SSH. For more information about what SSH is, please go here.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-10-02 10:00:00 +0200 CEST'>October 2, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;mrb0b1073</footer>
+  <a class="entry-link" aria-label="post link to Bandit0" href="http://localhost:1313/posts/otw/bandit/bandit0/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Bandit0 -&gt; Bandit 1
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Level description The password for the next level is stored in a file called readme located in the home directory. Use this password to log into bandit1 using SSH. Whenever you find a password for a level, use SSH (on port 2220) to log into that level and continue the game.
+Tips for beginners Learn about home directory in Linux. Learn to use cat and ls commands. Solution First step is to learn basic Linux commands. How we can read files? How can we list files inside a directory? To achieve this goal, lets just type:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-10-02 10:00:00 +0200 CEST'>October 2, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;mrb0b1073</footer>
+  <a class="entry-link" aria-label="post link to Bandit0 -&gt; Bandit 1" href="http://localhost:1313/posts/otw/bandit/bandit1/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Bandit1 -&gt; Bandit2
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Level description The password for the next level is stored in a file called - located in the home directory
+Tips for beginners Try to understand why previous solution is not working as you expect. Solution You may be asking yourself why OverTheWire people are asking the same as previous level. Let’s try with our cat command: The terminal is waiting for something else. This happens due to character - is used to pass arguments to our commands, and the linux shell is interpreting that. To prevent that, we could use:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-10-02 10:00:00 +0200 CEST'>October 2, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;mrb0b1073</footer>
+  <a class="entry-link" aria-label="post link to Bandit1 -&gt; Bandit2" href="http://localhost:1313/posts/otw/bandit/bandit2/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Bandit2 -&gt; Bandit3
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Level description The password for the next level is stored in a file called –spaces in this filename– located in the home directory
+Tips for beginners Think about how to escape the whitespaces. Solution After login in the machine as bandit3, we can see the filename –spaces in this filename–.
+Now we have 2 problems:
+Same as previous level, filename starts with --, so it will be interpreted as an argument. Address this problem using ./. Filename contains whitespaces. This is an issue, as bash interpretes whitespaces to separate commands. To solve the second problem, we must escape the whitespace character in some way. Here is the solution:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-10-04 10:00:00 +0200 CEST'>October 4, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;mrb0b1073</footer>
+  <a class="entry-link" aria-label="post link to Bandit2 -&gt; Bandit3" href="http://localhost:1313/posts/otw/bandit/bandit3/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Bandit3 -&gt; Bandit4
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Level description The password for the next level is stored in a hidden file in the inhere directory.
+Tips for beginners Learn how to navigate directories in Linux. First understand what a hidden file is. Solution Listing directory files inside bandit4’s home directory, show directory inhere.
+NB: How to distinguish files and directories in Linux? Use ls -l and see the difference.
+We have 2 options now:
+Move to inhere directory and check contens again. Check contents directly. Moving to another directory can be done using cd &lt;dirName&gt;. If you prefer to check directory contents directly, use ls &lt;dirName&gt;.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-10-04 10:00:00 +0200 CEST'>October 4, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;mrb0b1073</footer>
+  <a class="entry-link" aria-label="post link to Bandit3 -&gt; Bandit4" href="http://localhost:1313/posts/otw/bandit/bandit4/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Bandit4 -&gt; Bandit5
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Level description The password for the next level is stored in the only human-readable file in the inhere directory. Tip: if your terminal is messed up, try the “reset” command.
+Tips for beginners What means human-readable file? Is there any way to check filetype at Linux?. Solution Checking inhere’s contents shows some files names –file00, –file01, …, –file09. First things first, what is exactly a human-readable file? As you may be thinking, is a file whose content can be read by humans, i.e, ASCII text files. Check more about ASCII here
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-10-04 10:00:00 +0200 CEST'>October 4, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;mrb0b1073</footer>
+  <a class="entry-link" aria-label="post link to Bandit4 -&gt; Bandit5" href="http://localhost:1313/posts/otw/bandit/bandit5/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Bandit5 -&gt; Bandit6
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Level description The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:
+human-readable 1033 bytes in size not executable Tips for beginners First learn different ways to find files at Linux. Understand basic file properties, such as name, size or owner. Solution The purpose of the level is showing us how to find for files. Listing contents of inhere, we can see some folders, containing a lot of files inside: ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-10-04 10:00:00 +0200 CEST'>October 4, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;mrb0b1073</footer>
+  <a class="entry-link" aria-label="post link to Bandit5 -&gt; Bandit6" href="http://localhost:1313/posts/otw/bandit/bandit6/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="http://localhost:1313/page/2/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
     </main>
     
 <footer class="footer">
