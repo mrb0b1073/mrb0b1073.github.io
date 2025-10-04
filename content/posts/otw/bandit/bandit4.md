@@ -18,15 +18,15 @@ Listing directory files inside bandit4's home directory, show directory **inhere
 > **NB:** How to distinguish files and directories in Linux? Use `ls -l` and see the difference.
 
 We have 2 options now:
-1. Move to inhere directory and check contens again.
+1. Move to inhere directory and check contents again.
 2. Check contents directly.
 
 Moving to another directory can be done using `cd <dirName>`. If you prefer to check directory contents directly, use `ls <dirName>`.
 
-After checking inhere contents via `ls`, we see nothing. The reason is the file is a *hidden file*. A hidden file in Linux is everyfile whose name starts with dot `.`. Hidden files are not shown by default with `ls` command, so we must add a special flag `-a` to list **all** files:
+After checking inhere contents via `ls`, we see nothing. The reason is the file is a *hidden file*. A hidden file in Linux is any file whose name starts with dot `.`. Hidden files are not shown by default with `ls` command, so we must add a special flag `-a` to list **all** files:
 ![bandit4](/images/otw/bandit/bandit4/0.png)
 
-> **NB:** Both flags `-l` and `-a` cna be combined into a single flag `-al`, which is shorter to type.
+> **NB:** Both flags `-l` and `-a` can be combined into a single flag `-al`, which is shorter to type.
 
 As you can see, filename is **...Hidding-From-You** starting with three dots. Reading file contents should be easy at this point!
 

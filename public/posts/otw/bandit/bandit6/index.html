@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="auto">
-
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
-<title>Bandit5 -&gt; Bandit6 | Mr. B0b Hacking Blog</title>
-<meta name="keywords" content="">
-<meta name="description" content="Level description
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Bandit5 -> Bandit6 | Mr. B0b Hacking Blog</title><meta name=keywords content><meta name=description content="Level description
 The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:
 
 human-readable
@@ -21,265 +12,29 @@ Understand basic file properties, such as name, size or owner.
 
 Solution
 The purpose of the level is showing us how to find for files. Listing contents of inhere, we can see some folders, containing a lot of files inside:
-">
-<meta name="author" content="mrb0b1073">
-<link rel="canonical" href="http://localhost:1313/posts/otw/bandit/bandit6/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.af09b02249a195358cc41a429a0057df8f89e5b30aa897a316974e25f0581233.css" integrity="sha256-rwmwIkmhlTWMxBpCmgBX34&#43;J5bMKqJejFpdOJfBYEjM=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/otw/bandit/bandit6/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
+"><meta name=author content="mrb0b1073"><link rel=canonical href=https://mrb0b1073.github.io/posts/otw/bandit/bandit6/><link crossorigin=anonymous href=/assets/css/stylesheet.af09b02249a195358cc41a429a0057df8f89e5b30aa897a316974e25f0581233.css integrity="sha256-rwmwIkmhlTWMxBpCmgBX34+J5bMKqJejFpdOJfBYEjM=" rel="preload stylesheet" as=style><link rel=icon href=https://mrb0b1073.github.io/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://mrb0b1073.github.io/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://mrb0b1073.github.io/favicon-32x32.png><link rel=apple-touch-icon href=https://mrb0b1073.github.io/apple-touch-icon.png><link rel=mask-icon href=https://mrb0b1073.github.io/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://mrb0b1073.github.io/posts/otw/bandit/bandit6/><noscript><style>#theme-toggle,.top-link{display:none}</style></noscript><meta property="og:url" content="https://mrb0b1073.github.io/posts/otw/bandit/bandit6/"><meta property="og:site_name" content="Mr. B0b Hacking Blog"><meta property="og:title" content="Bandit5 -> Bandit6"><meta property="og:description" content="Level description The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:
+human-readable 1033 bytes in size not executable Tips for beginners First learn different ways to find files at Linux. Understand basic file properties, such as name, size or owner. Solution The purpose of the level is showing us how to find for files. Listing contents of inhere, we can see some folders, containing a lot of files inside: "><meta property="og:locale" content="en-us"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-10-04T10:00:00+02:00"><meta property="article:modified_time" content="2025-10-04T10:00:00+02:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Bandit5 -> Bandit6"><meta name=twitter:description content="Level description
+The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:
 
-    </style>
-</noscript>
-</head>
+human-readable
+1033 bytes in size
+not executable
 
-<body class=" dark" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    }
+Tips for beginners
 
-</script>
+First learn different ways to find files at Linux.
+Understand basic file properties, such as name, size or owner.
 
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Mr. B0b Hacking Blog (Alt + H)">Mr. B0b Hacking Blog</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="http://localhost:1313/" title="Home">
-                    <span>Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/search" title="Search (Alt &#43; /)" accesskey=/>
-                    <span>Search</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/posts/" title="Posts">
-                    <span>Posts</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/about/" title="About">
-                    <span>About</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main">
-
-<article class="post-single">
-  <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
-    <h1 class="post-title entry-hint-parent">
-      Bandit5 -&gt; Bandit6
-    </h1>
-    <div class="post-meta"><span title='2025-10-04 10:00:00 +0200 CEST'>October 4, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;mrb0b1073
-
-</div>
-  </header> 
-  <div class="post-content"><h2 id="level-description">Level description<a hidden class="anchor" aria-hidden="true" href="#level-description">#</a></h2>
-<p>The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:</p>
-<ul>
-<li>human-readable</li>
-<li>1033 bytes in size</li>
-<li>not executable</li>
-</ul>
-<h2 id="tips-for-beginners">Tips for beginners<a hidden class="anchor" aria-hidden="true" href="#tips-for-beginners">#</a></h2>
-<ul>
-<li>First learn different ways to find files at Linux.</li>
-<li>Understand basic file properties, such as name, size or owner.</li>
-</ul>
-<h2 id="solution">Solution<a hidden class="anchor" aria-hidden="true" href="#solution">#</a></h2>
-<p>The purpose of the level is showing us how to find for files. Listing contents of <strong>inhere</strong>, we can see some folders, containing a lot of files inside:
-<img alt="bandit6_0" loading="lazy" src="/images/otw/bandit/bandit6/0.png"></p>
-<blockquote>
-<p><strong>NB:</strong> Adding <code>-R</code> to <code>ls</code> shows recursively the content of every folder inside the directory listed.</p></blockquote>
-<p>So this time, checking every file is not an option. We need to find a file with some properties, specific size, not excutable and human-readable. Let&rsquo;s explain the command we&rsquo;re using:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find inhere/ -size 1033c ! -executable
-</span></span></code></pre></div><p>First, we specify the directory, in this case <strong>inhere</strong>. The option <code>-size 1033c</code> returns files of 1033 bytes. Then, with <code>-executable</code> we would get executable files, but we want <strong>not</strong> executable files, that&rsquo;s why we are adding <code>!</code> before.</p>
-<blockquote>
-<p><strong>NB:</strong> By default, the <code>-size</code> option takes as argument the number of blocks. For example, <code>-size 2</code> means 2 blocks of 512 bytes, so its 1024. The <code>c</code> is used to specify exact bytes. Don&rsquo;t ask me why it&rsquo;s <code>c</code> and not <code>b</code> 😅.</p></blockquote>
-<p>The property of human-readability is not implemented in find. This is not an issue, previous command returns a single file and it is human readable (we could confirm using <code>file</code>):
-<img alt="bandit6_1" loading="lazy" src="/images/otw/bandit/bandit6/1.png"></p>
-<p>Get your password and continue with <a href="/posts/otw/bandit/bandit7/">bandit7</a>.</p>
-
-
-  </div>
-
-  <footer class="post-footer">
-    <ul class="post-tags">
-    </ul>
-<nav class="paginav">
-  <a class="prev" href="http://localhost:1313/posts/otw/bandit/bandit5/">
-    <span class="title">« Prev</span>
-    <br>
-    <span>Bandit4 -&gt; Bandit5</span>
-  </a>
-  <a class="next" href="http://localhost:1313/posts/otw/bandit/bandit7/">
-    <span class="title">Next »</span>
-    <br>
-    <span>Bandit6 -&gt; Bandit7</span>
-  </a>
-</nav>
-
-  </footer>
-</article>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Mr. B0b Hacking Blog</a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-<script>
-    document.querySelectorAll('pre > code').forEach((codeblock) => {
-        const container = codeblock.parentNode.parentNode;
-
-        const copybutton = document.createElement('button');
-        copybutton.classList.add('copy-code');
-        copybutton.innerHTML = 'copy';
-
-        function copyingDone() {
-            copybutton.innerHTML = 'copied!';
-            setTimeout(() => {
-                copybutton.innerHTML = 'copy';
-            }, 2000);
-        }
-
-        copybutton.addEventListener('click', (cb) => {
-            if ('clipboard' in navigator) {
-                navigator.clipboard.writeText(codeblock.textContent);
-                copyingDone();
-                return;
-            }
-
-            const range = document.createRange();
-            range.selectNodeContents(codeblock);
-            const selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-            try {
-                document.execCommand('copy');
-                copyingDone();
-            } catch (e) { };
-            selection.removeRange(range);
-        });
-
-        if (container.classList.contains("highlight")) {
-            container.appendChild(copybutton);
-        } else if (container.parentNode.firstChild == container) {
-            
-        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-            
-            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
-        } else {
-            
-            codeblock.parentNode.appendChild(copybutton);
-        }
-    });
-</script>
-</body>
-
-</html>
+Solution
+The purpose of the level is showing us how to find for files. Listing contents of inhere, we can see some folders, containing a lot of files inside:
+"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://mrb0b1073.github.io/posts/"},{"@type":"ListItem","position":2,"name":"Bandit5 -\u003e Bandit6","item":"https://mrb0b1073.github.io/posts/otw/bandit/bandit6/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Bandit5 -\u003e Bandit6","name":"Bandit5 -\u003e Bandit6","description":"Level description The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:\nhuman-readable 1033 bytes in size not executable Tips for beginners First learn different ways to find files at Linux. Understand basic file properties, such as name, size or owner. Solution The purpose of the level is showing us how to find for files. Listing contents of inhere, we can see some folders, containing a lot of files inside: ","keywords":[],"articleBody":"Level description The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:\nhuman-readable 1033 bytes in size not executable Tips for beginners First learn different ways to find files at Linux. Understand basic file properties, such as name, size or owner. Solution The purpose of the level is showing us how to find for files. Listing contents of inhere, we can see some folders, containing a lot of files inside: NB: Adding -R to ls shows recursively the content of every folder inside the directory listed.\nSo this time, checking every file is not an option. We need to find a file with some properties, specific size, not excutable and human-readable. Let’s explain the command we’re using:\nfind inhere/ -size 1033c ! -executable First, we specify the directory, in this case inhere. The option -size 1033c returns files of 1033 bytes. Then, with -executable we would get executable files, but we want not executable files, that’s why we are adding ! before.\nNB: By default, the -size option takes as argument the number of blocks. For example, -size 2 means 2 blocks of 512 bytes, so its 1024. The c is used to specify exact bytes. Don’t ask me why it’s c and not b 😅.\nThe property of human-readability is not implemented in find. This is not an issue, previous command returns a single file and it is human readable (we could confirm using file): Get your password and continue with bandit7.\n","wordCount":"256","inLanguage":"en","datePublished":"2025-10-04T10:00:00+02:00","dateModified":"2025-10-04T10:00:00+02:00","author":{"@type":"Person","name":"mrb0b1073"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://mrb0b1073.github.io/posts/otw/bandit/bandit6/"},"publisher":{"@type":"Organization","name":"Mr. B0b Hacking Blog","logo":{"@type":"ImageObject","url":"https://mrb0b1073.github.io/favicon.ico"}}}</script></head><body class=dark id=top><script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://mrb0b1073.github.io/ accesskey=h title="Mr. B0b Hacking Blog (Alt + H)">Mr. B0b Hacking Blog</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
+<svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://mrb0b1073.github.io/ title=Home><span>Home</span></a></li><li><a href=https://mrb0b1073.github.io/search title="Search (Alt + /)" accesskey=/><span>Search</span></a></li><li><a href=https://mrb0b1073.github.io/posts/ title=Posts><span>Posts</span></a></li><li><a href=https://mrb0b1073.github.io/about/ title=About><span>About</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://mrb0b1073.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://mrb0b1073.github.io/posts/>Posts</a></div><h1 class="post-title entry-hint-parent">Bandit5 -> Bandit6</h1><div class=post-meta><span title='2025-10-04 10:00:00 +0200 CEST'>October 4, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;mrb0b1073</div></header><div class=post-content><h2 id=level-description>Level description<a hidden class=anchor aria-hidden=true href=#level-description>#</a></h2><p>The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:</p><ul><li>human-readable</li><li>1033 bytes in size</li><li>not executable</li></ul><h2 id=tips-for-beginners>Tips for beginners<a hidden class=anchor aria-hidden=true href=#tips-for-beginners>#</a></h2><ul><li>First learn different ways to find files at Linux.</li><li>Understand basic file properties, such as name, size or owner.</li></ul><h2 id=solution>Solution<a hidden class=anchor aria-hidden=true href=#solution>#</a></h2><p>The purpose of the level is showing us how to find for files. Listing contents of <strong>inhere</strong>, we can see some folders, containing a lot of files inside:
+<img alt=bandit6_0 loading=lazy src=/images/otw/bandit/bandit6/0.png></p><blockquote><p><strong>NB:</strong> Adding <code>-R</code> to <code>ls</code> shows recursively the content of every folder inside the directory listed.</p></blockquote><p>So this time, checking every file is not an option. We need to find a file with some properties, specific size, not excutable and human-readable. Let&rsquo;s explain the command we&rsquo;re using:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>find inhere/ -size 1033c ! -executable
+</span></span></code></pre></div><p>First, we specify the directory, in this case <strong>inhere</strong>. The option <code>-size 1033c</code> returns files of 1033 bytes. Then, with <code>-executable</code> we would get executable files, but we want <strong>not</strong> executable files, that&rsquo;s why we are adding <code>!</code> before.</p><blockquote><p><strong>NB:</strong> By default, the <code>-size</code> option takes as argument the number of blocks. For example, <code>-size 2</code> means 2 blocks of 512 bytes, so its 1024. The <code>c</code> is used to specify exact bytes. Don&rsquo;t ask me why it&rsquo;s <code>c</code> and not <code>b</code> 😅.</p></blockquote><p>The property of human-readability is not implemented in find. This is not an issue, previous command returns a single file and it is human readable (we could confirm using <code>file</code>):
+<img alt=bandit6_1 loading=lazy src=/images/otw/bandit/bandit6/1.png></p><p>Get your password and continue with <a href=/posts/otw/bandit/bandit7/>bandit7</a>.</p></div><footer class=post-footer><ul class=post-tags></ul><nav class=paginav><a class=prev href=https://mrb0b1073.github.io/posts/otw/bandit/bandit5/><span class=title>« Prev</span><br><span>Bandit4 -> Bandit5</span>
+</a><a class=next href=https://mrb0b1073.github.io/posts/otw/bandit/bandit7/><span class=title>Next »</span><br><span>Bandit6 -> Bandit7</span></a></nav></footer></article></main><footer class=footer><span>&copy; 2025 <a href=https://mrb0b1073.github.io/>Mr. B0b Hacking Blog</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="copy";function s(){t.innerHTML="copied!",setTimeout(()=>{t.innerHTML="copy"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>

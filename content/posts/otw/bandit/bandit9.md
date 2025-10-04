@@ -19,12 +19,12 @@ This level is a bit tricky. First, examine the file contents. Using `head` shows
 ![bandit9_0](/images/otw/bandit/bandit9/0.png)
 > **NB:** If you want to show more lines: `head -20` or the number of your choice.
 
-There are tons of different passwords. The correct one is the only line of text that occurs only once. Try to research how to do on your own. You maybe find `uniq`.
-This command has a very interesting flag, `-u`, used to show only the uniq lines. Let's try with that:
+There are tons of different passwords. The correct one is the only line of text that occurs only once. Try to research how to do it on your own. You may find `uniq`.
+This command has a very interesting flag, `-u`, used to show only the unique lines. Let's try with that:
 
 ![bandit9_1](/images/otw/bandit/bandit9/1.png)
 
-For some reason, is not working. The trick here is to sort the file contents before applying `uniq`. This can be achieved using `sort`, so the final command looks like this:
+For some reason, it's not working. The trick here is to sort the file contents before applying `uniq`. This can be achieved using `sort`, so the final command looks like this:
 
 ```bash
 cat data.txt | sort | uniq -u

@@ -14,7 +14,7 @@ The password for the next level is stored in a file called **readme** located in
 - Learn to use `cat` and `ls` commands.
 
 ## Solution
-First step is to learn basic Linux commands. How we can read files? How can we list files inside a directory? To achieve this goal, lets just type:
+First step is to learn basic Linux commands. How we can read files? How can we list files inside a directory? To achieve this goal, let's just type:
 ```bash
 ls
 ```
@@ -25,7 +25,7 @@ Now we can to check the contents, so let's use cat:
 cat readme
 ```
 To read a file, we use `cat <filename>`.
-> **NB:** Not every file is human readable in Linux. We deep more about this in later levels.
+> **NB:** Not every file is human readable in Linux. We dive into this in later levels.
 
 The content of the readme file reveals the password for [bandit2]({{< relref "bandit2.md" >}}) level.
 
